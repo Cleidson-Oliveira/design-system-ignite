@@ -1,8 +1,8 @@
-import { createStitches } from '@stitches/react'
+import { createStitches, defaultThemeMap } from '@stitches/react'
 import {
   colors,
-  fonts,
   fontSizes,
+  fonts,
   fontWeights,
   lineHeights,
   radii,
@@ -20,6 +20,7 @@ export const {
   keyframes,
 } = createStitches({
   themeMap: {
+    ...defaultThemeMap,
     height: 'space',
     width: 'space',
   },
