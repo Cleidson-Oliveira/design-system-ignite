@@ -19,12 +19,12 @@ const config = {
         name: "@storybook/react-vite",
         options: {},
     },
-    // async viteFinal (config, { configType }) {
-    //     if (configType === 'PRODUCTION') {
-    //         config.base = '/design-system-ignite/'
-    //     }
+    async viteFinal (config, { configType }) {
+        if (configType === 'PRODUCTION') {
+            config.base = '/design-system-ignite/'
+        }
 
-    //     return mergeConfig(config);
-    // }
+        return mergeConfig(config);
+    }
 };
 export default config;
