@@ -1,4 +1,7 @@
 /** @type { import('@storybook/react-vite').StorybookConfig } */
+
+import { mergeConfig } from 'vite';
+
 const config = {
     stories: ["../src/pages/**/*.mdx", "../src/stories/**/*.stories.@(js|jsx|ts|tsx)"],
     addons: [
@@ -9,16 +12,19 @@ const config = {
         "storybook-addon-preview",
         "@storybook/addon-a11y"
     ],
+    core: {
+        builder: '@storybook/builder-vite',
+    },
     framework: {
         name: "@storybook/react-vite",
         options: {},
     },
-    viteFinal: (config, { configType }) => {
+    async viteFinal (config, { configType }) {
         if (configType === 'PRODUCTION') {
             config.base = '/design-system-ignite/'
         }
 
-        return config
+        return mergeConfig(config);
     }
 };
 export default config;
