@@ -1,0 +1,2 @@
+import{A as t}from"./index.bf29da3f.js";import"./index.3d6782f4.js";import"./iframe.d4941cff.js";import"./index.95cdb9c3.js";import"./jsx-runtime.d6433a0a.js";const e={title:"Data display/Avatar",component:t,args:{src:"https://github.com/Cleidson-Oliveira.png",alt:"Cleidson Oliveira"},argTypes:{src:{control:{type:"text"}}}},l={},p={args:{src:void 0}},c=["Primary","WithFallback"];export{l as Primary,p as WithFallback,c as __namedExportsOrder,e as default};
+//# sourceMappingURL=Avatar.stories.0559bd09.js.map
