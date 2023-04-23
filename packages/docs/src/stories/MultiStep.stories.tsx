@@ -4,7 +4,6 @@ import { Box, MultiStep, MultiStepProps } from '@ignite-ui/react'
 export default {
   title: 'Form/Multi Step',
   component: MultiStep,
-  tags: ["autodocs"],
   args: {
     size: 4,
     currentStep: 1,

@@ -4,7 +4,6 @@ import { Box, Text, Checkbox, CheckboxProps } from '@ignite-ui/react'
 export default {
   title: 'Form/Checkbox',
   component: Checkbox,
-  tags: ["autodocs"],
   args: {},
   decorators: [
     (Story) => {
@@ -14,7 +13,7 @@ export default {
           css={{ display: 'flex', flexDirection: 'row', gap: '$2' }}
         >
           {Story()}
-          <Text size="sm">Accept terms of use!</Text>
+          <Text size="sm">Accept terms of use</Text>
         </Box>
       )
     },
